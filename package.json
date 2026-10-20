@@ -1,0 +1,36 @@
+{
+  "name": "icon-finance-management",
+  "version": "1.0.0",
+  "description": "Finance Management System for Imperial College of Nursing Swat",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "client": "npm run dev --prefix client",
+    "client:build": "npm run build --prefix client",
+    "db:backup": "node scripts/backup.js",
+    "db:backup:schedule": "node scripts/scheduleBackup.js"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "mongoose",
+    "finance",
+    "imperial-college-of-nursing"
+  ],
+  "author": "Imperial College of Nursing Swat",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^8.9.7",
+    "multer": "^2.2.0",
+    "node-cron": "^4.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
